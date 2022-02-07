@@ -112,8 +112,8 @@ async def start_revil():
             print("Booting Up The Client 1")
             await idk.start()
             botme = await idk.get_me()
-            await idk(functions.channels.JoinChannelRequest(channel="@REVIL_BOT_OFFICIAL"))
-            await idk(functions.channels.JoinChannelRequest(channel="@REVIL_BOT_SUPPORT"))
+            await idk(functions.channels.JoinChannelRequest(channel="@URANIUM_FIGHTERS"))
+            await idk(functions.channels.JoinChannelRequest(channel="@URANIUM_FIGHTERS"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -136,8 +136,8 @@ async def start_revil():
         try:
             print("Booting Up The Client 2")
             await ydk.start()
-            await ydk(functions.channels.JoinChannelRequest(channel="@REVIL_BOT_OFFICIAL"))
-            await ydk(functions.channels.JoinChannelRequest(channel="@REVIL_BOT_SUPPORT"))
+            await ydk(functions.channels.JoinChannelRequest(channel="@URANIUM_FIGHTERS"))
+            await ydk(functions.channels.JoinChannelRequest(channel="@URANIUM_FIGHTERS"))
             botme = await ydk.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -784,7 +784,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Sucessfully changed profile")
+                await event.edit("𝐒𝐮𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐜𝐡𝐚𝐧𝐠𝐞𝐝 𝐩𝐫𝐨𝐟𝐢𝐥𝐞 ✅")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -826,7 +826,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("SUCCESSFULLY JOINED ")
+                await event.edit("𝗦𝗨𝗖𝗖𝗘𝗦𝗦𝗙𝗨𝗟𝗟𝗬 𝗝𝗢𝗜𝗡𝗘𝗗 ✅")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -870,7 +870,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(ImportChatInviteRequest(bc))
-                await event.edit("SECRETLY JOINED")
+                await event.edit("𝐒𝐄𝐂𝐑𝐄𝐓𝐋𝐘 𝐉𝐎𝐈𝐍𝐄𝐃 ✅")
 
 ")
             except Exception as e:
@@ -915,7 +915,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("Succesfully Left")
+                await event.edit("𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘 𝐋𝐄𝐅𝐓 ✅")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -960,7 +960,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("SUCCESSFULLY LEAVED")
+                await event.edit("𝐒𝐔𝐂𝐂𝐄𝐒𝐒𝐅𝐔𝐋𝐋𝐘 𝐋𝐄𝐅𝐓 ✅")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1312,7 +1312,7 @@ async def _(e):
             qeue = que.get(g)
             appendable = [g]
             qeue.append(appendable)
-            text = "ACTIVATED REPLY RAID AB BOL BSDK DEKH KAISE TERI GAAND MAARTA HUN"
+            text = "𝗥𝗘𝗣𝗟𝗬𝗥𝗔𝗜𝗗 𝗔𝗖𝗜𝗩𝗔𝗧𝗘𝗗 𝗢𝗡 𝗖𝗛𝗨𝗧𝗜𝗬𝗔 𝗣𝗘𝗥𝗦𝗢𝗡 😂"
             await e.reply(text, parse_mode=None, link_preview=None )
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1361,7 +1361,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "DE-ACTIVATED REPLY RAID"
+            text = " 𝙱𝙰𝙲𝙷𝙲𝙷𝙰 𝚂𝙼𝙹𝙷 𝙺𝙴 𝙲𝙷𝙷𝙾𝙳 𝚁𝙰𝙷𝙰 𝙷𝚄 #𝚄𝚁𝙰𝙽𝙸𝚄𝙼_𝙾𝙿 🔥"
             await e.reply(text, parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
@@ -1372,7 +1372,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "DE-ACTIVATED REPLY RAID "
+            text = " 𝙱𝙰𝙲𝙷𝙲𝙷𝙰 𝚂𝙼𝙹𝙷 𝙺𝙴 𝙲𝙷𝙷𝙾𝙳 𝚁𝙰𝙷𝙰 𝙷𝚄 #𝚄𝚁𝙰𝙽𝙸𝚄𝙼_𝙾𝙿 🔥"
             await e.reply(text, parse_mode=None, link_preview=None )
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1418,7 +1418,7 @@ async def ping(e):
 ██████╔╝██║░░██║██╔██╗██║██║░░██╗░
 ██╔═══╝░██║░░██║██║╚████║██║░░╚██╗
 ██║░░░░░╚█████╔╝██║░╚███║╚██████╔╝
-╚═╝░░░░░░╚════╝░╚═╝░░╚══╝░╚═════╝░\n\n\nURANIUM SPAMBOT\n`{ms}` ᴍs")
+╚═╝░░░░░░╚════╝░╚═╝░░╚══╝░╚═════╝░\n\n\n⚔️𝙐𝙍𝘼𝙉𝙄𝙐𝙈 ✘ 𝙎𝙋𝘼𝙈𝘽𝙊𝙏 ⚔️\n`{ms}` ᴍs")
 
 
     
@@ -1560,7 +1560,7 @@ async def alive(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 CURSE 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.alive\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n\n.join\n.leave\n.pjoin\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n\n.replyraid\n.dreplyraid\n\n\nFOR MORE REPO FEATURES JOIN @SH4DOW_SUPPORT"
+       text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 CURSE 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.alive\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n\n.join\n.leave\n.pjoin\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n\n.replyraid\n.dreplyraid\n\n\nFOR MORE REPO FEATURES JOIN @URANIUM_FIGHTERS"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
