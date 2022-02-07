@@ -747,44 +747,44 @@ async def gifspam(e, smex):
         pass
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
+@put.on(events.NewMessage(incoming=True, pattern=r"\.profile"))
 
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
+    usage = "profile = bio\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
     if e.sender_id in SMEX_USERS:
         revil = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
         if len(e.text) > 5:
             bio = str(revil[0])
-            text = "Changing Bio"
+            text = "Changing profile"
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Succesfully Changed Bio By REVIL MULTISPAM Bot")
+                await event.edit("Sucessfully changed profile")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -826,7 +826,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("SUCCESSFULLY JOINED CHAL AB LADOO KHILA")
+                await event.edit("SUCCESSFULLY JOINED ")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -870,7 +870,9 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(ImportChatInviteRequest(bc))
-                await event.edit("SECRETLY JOINED CHAL AB ISSI KHUSHI MAIN DAARU PILA")
+                await event.edit("SECRETLY JOINED")
+
+")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -958,7 +960,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("SUCCESSFULLY LEFT CHAL AB LADOO KHILA")
+                await event.edit("SUCCESSFULLY LEAVED")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -1143,36 +1145,36 @@ async def spam(e):
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.5)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
+@put.on(events.NewMessage(incoming=True, pattern=r"\.curse"))
 
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
@@ -1300,7 +1302,7 @@ async def _(e):
             qeue = que.get(g)
             appendable = [g]
             qeue.append(appendable)
-            text = "ACTIVATED REPLY RAID AB BOL BSDK DEKH KAISE TERI GAAND MAARTA HUN"
+            text = "ACTIVATED REPLY RAID "
             await e.reply(text, parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
@@ -1359,7 +1361,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "DE-ACTIVATED REPLY RAID CHAL BETA AGLI BAAR APNE BAAP KO BHEJNA"
+            text = "DE-ACTIVATED REPLY RAID"
             await e.reply(text, parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
@@ -1370,7 +1372,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "DE-ACTIVATED REPLY RAID CHAL BETA AGLI BAAR APNE BAAP KO BHEJNA"
+            text = "DE-ACTIVATED REPLY RAID "
             await e.reply(text, parse_mode=None, link_preview=None )
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
@@ -1406,11 +1408,17 @@ async def _(e):
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
-        text = "ℙ𝕆ℕ𝔾!"
+        text = "PONG+"
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"█▀█ █▀█ █▄░█ █▀▀\n█▀▀ █▄█ █░▀█ █▄█\n\nREVIL MULTISPAM BOT\n`{ms}` ᴍs")
+        await event.edit(f"
+██████╗░░█████╗░███╗░░██╗░██████╗░
+██╔══██╗██╔══██╗████╗░██║██╔════╝░
+██████╔╝██║░░██║██╔██╗██║██║░░██╗░
+██╔═══╝░██║░░██║██║╚████║██║░░╚██╗
+██║░░░░░╚█████╔╝██║░╚███║╚██████╔╝
+╚═╝░░░░░░╚════╝░╚═╝░░╚══╝░╚═════╝░\n\n\nCURSE SPAMBOT\n`{ms}` ᴍs")
 
 
     
@@ -1520,7 +1528,7 @@ async def restart(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 async def alive(e):
     if e.sender_id in SMEX_USERS:
-        text = "  𝗥𝐄V𝐈𝗟 Mᴜ𝗟ᴛI Sᴘᴀᴍ BᴏT \n\n\n RᴇVɪ𝗟 Mᴜ𝗟ᴛI Sᴘᴀᴍ BᴏT ɪs A𝗟ɪᴠE !!\n\n ┏━━━━━━━━━━━━━━━━━━━\n ┣➣ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 3.9.6\n ┣➣ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 1.17 \n ┣➣ sᴜᴘᴘᴏʀᴛ : @REVIL_BOT_SUPPORT\n ┣➣ ᴄʀᴇᴀᴛᴇʀ : 𝗥evilHunTeR\n ┗━━━━━━━━━━━━━━━━━━━\n "
+        text = "  CURSE SPAMBOT \n\n\n YOUR BOT IS ALIVE !!\n\n ┏━━━━━━━━━━━━━━━━━\n ┣➣ ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 3.9.6\n ┣➣ ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ : 1.17 \n ┣➣ sᴜᴘᴘᴏʀᴛ : @SH4DOW_SUPPORT\n ┣➣ ᴄʀᴇᴀᴛᴇʀ : ALL\n ┗━━━━━━━━━━━━━━━━━━━\n "
         await e.reply(text, parse_mode=None, link_preview=None )
 
                         
@@ -1552,7 +1560,7 @@ async def alive(e):
 
 async def help(e):
     if e.sender_id in SMEX_USERS:
-       text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 𝗥𝐄V𝐈𝗟 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.alive\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.bio\n.join\n.leave\n.pjoin\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n.raid\n.replyraid\n.dreplyraid\n\n\nFor more help regarding usage of plugins type plugins name"
+       text = "𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 𝐂𝐎𝐌𝐌𝐌𝐀𝐍𝐃𝐒 𝐈𝐍 CURSE 𝐒𝐏𝐀𝐌 𝐁𝐎𝐓 \n\n𝐔𝐓𝐈𝐋𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.alive\n.ping\n.restart\n\n𝐔𝐒𝐄𝐑𝐁𝐎𝐓 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n\n.join\n.leave\n.pjoin\n.pleave\n\n𝐒𝐏𝐀𝐌 𝐂𝐎𝐌𝐌𝐀𝐍𝐃:\n.spam\n.delayspam\n.bigspam\n\n.replyraid\n.dreplyraid\n\n\nFOR MORE REPO FEATURES JOIN @SH4DOW_SUPPORT"
        await e.reply(text, parse_mode=None, link_preview=None )
 
         
@@ -1560,16 +1568,11 @@ async def help(e):
     
         
 text = """
-██████╗░███████╗██╗░░░██╗██╗██╗░░░░░
-██╔══██╗██╔════╝██║░░░██║██║██║░░░░░
-██████╔╝█████╗░░╚██╗░██╔╝██║██║░░░░░
-██╔══██╗██╔══╝░░░╚████╔╝░██║██║░░░░░
-██║░░██║███████╗░░╚██╔╝░░██║███████╗
-╚═╝░░╚═╝╚══════╝░░░╚═╝░░░╚═╝╚══════╝ """
+OK"""
 
 print(text)
 print("")
-print("CONGRATS ! YOUR REVIL MULTISPAM BOT HAS STARTED SUCCESSFULLY. TYPE .ping OR .alive TO CHECK IF YOUR BOT'S ALIVE STATUS.")
+print("CONGRATS ! YOUR CURSE SPAMBOT HAS STARTED SUCCESSFULLY. TYPE .ping OR .alive TO CHECK IF YOUR BOT'S ALIVE STATUS.")
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
