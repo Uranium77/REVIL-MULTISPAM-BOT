@@ -1,4 +1,4 @@
-# Revilhuntermultispambot
+# URANIUMEFIGHTER-MULTISPAMBOT
 
 
 <p align="center">
@@ -23,8 +23,8 @@
 
 #ꜱᴘᴀᴍʙᴏᴛꜱ 🔥
 # NO NEED OF API ID AND HASH YOU CAN USE THESE API ID AND HASH:-
-• API ID = 4014305
-• API HASH = b0cb9e17b2b8bcde3be7161c8bfa6013
+• API ID = 18514209
+• API HASH = 6194ba51dcf840b09f2b2e2c431fe0b7
 
 
 ## 🚀 Deploy on Heroku 
