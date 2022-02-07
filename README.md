@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/00bc1bdc3ea94c1b2adc0.jpg">
+  <img src=https://telegra.ph/file/fac6cfb6fb3b3930c79a6.jpg>
 </p>
 
 # THE FASTEST MULTISPAM BOT 🤞🤞 
