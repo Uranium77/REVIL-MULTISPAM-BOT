@@ -872,7 +872,7 @@ async def _(e):
                 await e.client(ImportChatInviteRequest(bc))
                 await event.edit("𝐒𝐄𝐂𝐑𝐄𝐓𝐋𝐘 𝐉𝐎𝐈𝐍𝐄𝐃 ✅")
 
-")
+
             except Exception as e:
                 await event.edit(str(e))   
         else:
